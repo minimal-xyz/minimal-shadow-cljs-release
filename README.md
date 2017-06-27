@@ -10,7 +10,7 @@ To compile to `dist/`:
 
 ```bash
 yarn
-yarn build # shadow-cljs compile app
+yarn compile # shadow-cljs compile app
 ```
 
 To build to `dist/`:
