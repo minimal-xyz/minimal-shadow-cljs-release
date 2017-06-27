@@ -7,7 +7,8 @@
     "shadow-cljs": "^0.16.1"
   },
   "scripts": {
-    "del": "rm -f target/release/*",
-    "build": "yarn del && shadow-cljs release release"
+    "del": "rm -rf dist/*",
+    "compile": "yarn del && shadow-cljs compile app",
+    "build": "yarn del && shadow-cljs release app"
   }
 }
