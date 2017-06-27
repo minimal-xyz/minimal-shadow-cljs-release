@@ -1,0 +1,13 @@
+{
+  "name": "minimal-shadow-cljs-release",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^0.16.1"
+  },
+  "scripts": {
+    "del": "rm -f target/release/*",
+    "build": "yarn del && shadow-cljs release release"
+  }
+}

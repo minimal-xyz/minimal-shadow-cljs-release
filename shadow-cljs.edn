@@ -1,0 +1,10 @@
+
+{:source-paths ["src/"]
+ :dependencies []
+ :builds {:release {:output-dir "target/release"
+                    :target :browser
+                    :asset-path "release/"
+                    :module-hash-names true
+                    :modules {:main {:entries [app.main]
+                                     :depends-on #{:lib}}
+                              :lib {:entries [app.lib]}}}}}
