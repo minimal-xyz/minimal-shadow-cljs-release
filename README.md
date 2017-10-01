@@ -10,13 +10,14 @@ To compile to `dist/`:
 
 ```bash
 yarn
-yarn compile # shadow-cljs compile app
+yarn shadow-cljs compile app
 ```
 
 To build to `dist/`:
 
 ```bash
-yarn build # shadow-cljs release app
+yarn del
+yarn shadow-cljs release app
 ```
 
 Informations about files are saved in `dist/manifest.json`, which can be used to generate HTML.

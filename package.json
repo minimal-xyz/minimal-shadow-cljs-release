@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "shadow-cljs": "^0.16.1"
+    "shadow-cljs": "^2.0.2"
   },
   "scripts": {
     "del": "rm -rf dist/*",
-    "compile": "yarn del && shadow-cljs compile app",
-    "build": "yarn del && shadow-cljs release app"
+    "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app",
+    "build": "yarn del && yarn release"
   }
 }
