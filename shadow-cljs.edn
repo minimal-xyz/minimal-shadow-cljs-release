@@ -4,7 +4,5 @@
  :builds {:app {:output-dir "dist/"
                 :target :browser
                 :asset-path "."
-                :modules {:main {:entries [app.main]
-                                 :depends-on #{:lib}}
-                          :lib {:entries [app.lib]}}
-                :release {:module-hash-names true}}}}
+                :modules {:main {:init-fn app.main/main!}}
+                :release {:module-hash-names 8}}}}
